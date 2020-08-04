@@ -38,7 +38,7 @@ def respond():
         localTime = utcTime.astimezone(to_zone)
         formattedEndTime = localTime.strftime('%H %M %S')
 
-        command = "mv log.csv 'logs/" + formattedStartTime + " - " + formattedEndTime + ".csv'"
+        command = "mv log.csv 'logs/" + formattedStartTime + " - " + formattedEndTime + ".csv' && cp 'logs/" + formattedStartTime + " - " + formattedEndTime + ".csv' './Webhook Logs symlink/" + formattedStartTime + " - " + formattedEndTime + ".csv'"
         os.system(command)
     elif event == "meeting.participant_joined":
         type = data['payload']['object']['type']

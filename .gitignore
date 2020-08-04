@@ -128,3 +128,4 @@ dmypy.json
 logs/
 log.csv
 .DS_Store
+Webhook Logs symlink
