@@ -1,4 +1,4 @@
-# zoom-attendance-log-and-breakout-room-leaving-notifier
+# `zoom-breakout-leaving-notifier`
 
 This Flask project is designed to handle webhooks from Zoom, with the "Event Subscriptions" demonstrated in the following example:
 
